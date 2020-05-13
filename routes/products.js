@@ -49,7 +49,6 @@ router.get("/", (req, res) => {
       .then(products => {
          res.render("products", {products: [...products]});
       })
-   
 });
 
 router.get("/new", isLoggedIn, (req, res) => {

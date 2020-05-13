@@ -8,6 +8,7 @@ const path = require("path");
 const models = require("./models");
 const indexRoutes = require("./routes");
 const productRoutes = require("./routes/products");
+const superRoutes = require("./routes/super");
 const app = express();
 
 app.use(flash());
@@ -33,7 +34,9 @@ app.use((req, res, next) => {
    next();
 })
 
+// ROUTES
 app.use('/products', productRoutes);
+app.use('/super', superRoutes);
 app.use(indexRoutes);
 
 app.listen(3000, () => {
