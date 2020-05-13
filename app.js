@@ -27,6 +27,9 @@ app.use(passport.session());
 passport.use(new LocalStrategy(models.User.authenticate()));
 passport.serializeUser(models.User.serializeUser());
 passport.deserializeUser(models.User.deserializeUser());
+passport.use(new LocalStrategy(models.SuperUser.authenticate()));
+passport.serializeUser(models.SuperUser.serializeUser());
+passport.deserializeUser(models.SuperUser.deserializeUser());
 
 // Middleware to pass currentUser data to views (MUST BE DECLARED AFTER PASSPORT CONFIG)
 app.use((req, res, next) => {
