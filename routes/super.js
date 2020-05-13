@@ -15,17 +15,17 @@ router.get("/login", (req, res) => {
    res.render("super/login");
 });
 
-router.get("/register", (req, res) => {
-
-});
-
 router.get("/", (req, res) => {
-   res.send("super");
+   res.redirect("/login");
+})
+
+router.get("/dashboard", (req, res) => {
+   res.send("super dashboard");
 });
 
 router.post("/login", 
    passport.authenticate("local", {
-      successRedirect: "/super/", 
+      successRedirect: "/super/dashboard", 
       failureRedirect: "back"
    }), (req, res) => {
 });
