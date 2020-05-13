@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="icon" href="/images/LOGO-1-square.png">
+   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+   <link rel="stylesheet" href="/css/fa.css" type="text/css">
+   <link rel="stylesheet" href="/css/main.css" type="text/css">
+   <link rel="stylesheet" href="/css/landing.css" type="text/css">
+   <% if (current == "products" || current =="products/new") { %>
+      <link rel="stylesheet" href="../css/products.css" type="text/css">
+   <% } %>
+
+   <script defer src="/js/fa.js"></script>
+
+   <title>benshoppe</title>
+
+<!-- 
+
+      █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+      █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
+      █░░║║║╠─║─║─║║║║║╠─░░█
+      █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
+      █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+
+   ▄███▄◕─◕▄██▄◕ ▄███▄◕─◕▄██▄
+   ▀──██◕◕██──██◕▀──██◕◕██──██
+   ──██◕─◕██──██◕──██◕─◕██──██
+   ─██◕──◕██──██◕─██◕──◕██──██
+   █████◕─◕▀██▀◕─█████◕─◕▀██▀
+
+ -->
+
+</head>
+<body>
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div class="navbar-brand">
+         <a href="/"><img src="/images/LOGO-1.png" height="30px"></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+         <nav class="nav navbar-nav ml-auto">
+            <a class="nav-item nav-link <% if (current == "products" || current == "products/new") { %> active <% } %>" href="/products">products</a>
+            <% if (!currentUser) { %>
+               <a class="nav-item nav-link <% if (current == "login") { %> active <% } %>" href="/login">login</a>
+               <a class="nav-item nav-link <% if (current == "signup") { %> active <% } %>" href="/signup">sign up</a>
+            <% } else { %>
+               <a class="nav-item nav-link <% if (current == "my-account") { %> active <% } %>" href="/user/<%= currentUser.id %>">my account</a>
+               <a class="nav-item nav-link" href="/logout">logout</a>
+            <% } %>
+            <a class="nav-item nav-link <% if (current == "") { %> active <% } %>" href="/">about</a>
+         </nav>
+      </div>
+   </nav>

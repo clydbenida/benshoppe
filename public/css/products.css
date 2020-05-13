@@ -1,0 +1,21 @@
+.header-container {
+   margin: 1em 0;
+}
+
+.btn-addproduct {
+   background-color: #D1610A;
+   color: white;
+   padding: 1em;
+   width: 100%;
+   border-radius: 10px;
+}
+
+#price {
+   font-weight: 800;
+}
+
+.img-container {
+   margin: 0;
+   max-height: 498px;
+   overflow: hidden;
+}

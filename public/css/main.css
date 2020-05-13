@@ -1,0 +1,113 @@
+nav {
+   color: black;
+   font-family: "Encode Sans";
+}
+
+body {
+   font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+   color: black,
+}
+
+h1 {
+   font-weight: 800;
+}
+
+h4 {
+   font-weight: 600;
+}
+
+.footer-container {
+   background-color: #425D75;
+   padding: 2em 1em;
+   margin-top: 1em;
+   bottom: 0;
+}
+
+.footer-container * {
+   color: white;
+   font-size: small;
+}
+
+.nav-link:hover {
+   border-right: 1px solid black;
+}
+
+div.navbar-nav .nav-item:before {
+   content: none;
+   background-color: #008DB9;
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100px;
+   height: 100px;
+}
+
+#login {
+   width: fit-content;
+   margin: 0 auto;
+}
+
+#signup {
+   margin: 0 auto;
+}
+
+#alert {
+   color: #d30000;
+}
+
+#firstname, #lastname, #password, #confirmPassword {
+   width: 239px;
+}
+
+.login-container {
+   text-align: center;
+   box-shadow: 0px 0px 5px 1px rgba(0, 141, 185, 0.3);
+   width: fit-content;
+   margin: 5em auto;
+   padding: 3em 2em;
+   border-radius: 45px;
+}
+
+.signup-container {
+   box-shadow: 0px 0px 5px 1px rgba(0, 141, 185, 0.3);
+   margin: 5em auto;
+   padding: 3em 2em;
+   border-radius: 45px;
+}
+
+label {
+   text-align: left;
+}
+
+.btn-login {
+   background-color: #D1610A;
+   color: white;
+   padding: 1em 5em;
+   border-radius: 10px;
+}
+
+.col-head {
+   background-color: #008DB9;
+   border: none;
+}
+
+.info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.info-label {
+   display: block;
+}
+
+.info:hover .link-edit {
+   visibility: visible;
+}
+
+.link-edit {
+   visibility: hidden;
+}
+
+ul {
+   padding-inline-start: 25px;
+}

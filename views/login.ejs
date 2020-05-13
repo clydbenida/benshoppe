@@ -1,0 +1,29 @@
+<%- include("partials/header", {current: "login"}) %>
+
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="login-container">
+         <img src="images/LOGO-1.png" width="300em" alt="">
+         <form action="/login" method="POST" id="login">
+            <div class="form-group">
+               <label>
+                  Username
+                  <input type="text" name="username" id="txtbxEmail" class="form-control" placeholder="Username">
+               </label>
+            </div>
+            <div class="form-group">
+               <label>
+                  Password
+                  <input type="password" name="password" id="txtbxPassword" class="form-control" placeholder="Password">
+               </label>
+            </div>
+            <button type="submit" class="btn btn-login">login</button>
+            <br><small><a href="/forgot-password">Forgot Password</a></small><br>
+            <small>Already have an account? Sign up <a href="/signup">here</a>!</small><br>
+         </form>
+      </div>
+   </div>
+</div>
+
+<%- include("partials/footer", {current: "login"}) %>

@@ -1,0 +1,31 @@
+.navbar.navbar-light.bg-light {
+   background-color: white!important;
+   border-bottom: 1px solid rgba(0, 141, 185, 0.169); 
+   padding-top: 1em;
+}
+
+.navbar-nav .nav-item.nav-link {
+   color: black;
+}
+
+.navbar-nav .nav-item.nav-link.active {
+   font-weight: bold;
+}
+
+.img-container {
+   text-align: center;
+   margin-top: 2em;
+}
+
+.img-inline {
+   font-size: -1em;
+}
+
+.greeting-container {
+   text-align: center;
+   color: black;
+}
+
+#me {
+   width: 50vw;
+}
